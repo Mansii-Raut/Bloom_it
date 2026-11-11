@@ -1,0 +1,172 @@
+.announcement {
+  background: #9c5268;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  background: #fffaf7;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #9c5268;
+}
+
+.logo span {
+  color: #d99aaa;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav a {
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #b65e78;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  padding: 70px 10%;
+  background: linear-gradient(90deg, #f8e9e8, #fff4ed);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.subtitle {
+  color: #a45a70;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 58px;
+  line-height: 1.2;
+  color: #663c48;
+  margin-bottom: 20px;
+}
+
+.hero-content > p:not(.subtitle) {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #735f60;
+  margin-bottom: 30px;
+}
+
+.shop-button {
+  display: inline-block;
+  background: #a45a70;
+  color: white;
+  padding: 15px 30px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: background 0.3s;
+}
+
+.shop-button:hover {
+  background: #783c51;
+}
+
+.categories {
+  text-align: center;
+  padding: 75px 7%;
+}
+
+.categories h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #663c48;
+}
+
+.categories > p {
+  margin-top: 12px;
+  color: #806f70;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.category-list div {
+  background: #f8e9e8;
+  padding: 45px 15px;
+  border-radius: 8px;
+  font-size: 40px;
+}
+
+.category-list h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  margin-top: 15px;
+  color: #663c48;
+}
+
+footer {
+  background: #663c48;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  line-height: 2;
+}
+
+footer h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .navbar nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .category-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+}
