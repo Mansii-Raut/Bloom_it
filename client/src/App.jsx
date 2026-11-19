@@ -4,6 +4,9 @@ import Hero from './components/Hero';
 import Categories from './components/Categories';
 import FeaturedProducts from './components/FeaturedProducts';
 import WhyChooseUs from './components/WhyChooseUs';
+import ShopByOccasion from './components/ShopByOccasion';
+import CustomBouquet from './components/CustomBouquet';
+import FestivalOffers from './components/FestivalOffers';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
          <Categories />
           <FeaturedProducts />
             <WhyChooseUs />
+             <ShopByOccasion />
+              <CustomBouquet />
+               <FestivalOffers />
       </main>
 
       <footer id="contact">

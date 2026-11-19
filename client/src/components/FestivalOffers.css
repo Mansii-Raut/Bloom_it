@@ -1,0 +1,87 @@
+.festival-offers {
+  padding: 85px 8%;
+  background: #fffaf5;
+}
+
+.festival-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.festival-heading span {
+  color: #bd7b7e;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.festival-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #344b3f;
+  margin: 15px 0;
+}
+
+.festival-heading p {
+  color: #806f69;
+  font-size: 14px;
+}
+
+.festival-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.festival-card {
+  min-height: 260px;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #fce9e7;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.festival-card:nth-child(2) {
+  background: #f4eee2;
+}
+
+.festival-card:nth-child(3) {
+  background: #e9eee7;
+}
+
+.festival-card:hover {
+  transform: translateY(-6px);
+}
+
+.festival-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: #344b3f;
+  margin-bottom: 10px;
+}
+
+.festival-card p {
+  color: #806f69;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.festival-card span {
+  color: #bd7b7e;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .festival-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .festival-heading h2 {
+    font-size: 30px;
+  }
+}
