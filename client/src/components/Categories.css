@@ -1,0 +1,132 @@
+/* CATEGORIES SECTION */
+
+.categories-section {
+  padding: 85px 8%;
+  background-color: #fffaf7;
+}
+
+/* SECTION HEADING */
+
+.categories-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.categories-heading span {
+  color: #bd7b7e;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.categories-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #304b3d;
+  margin: 12px 0;
+}
+
+.categories-heading p {
+  color: #806f69;
+  font-size: 15px;
+}
+
+/* CATEGORY GRID */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+/* CATEGORY CARD */
+
+.category-card {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f4e7e3;
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+/* IMAGE OVERLAY */
+
+.category-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 20px 25px;
+  color: white;
+  background: linear-gradient(
+    transparent,
+    rgba(25, 35, 27, 0.85)
+  );
+}
+
+.category-overlay h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.category-overlay p {
+  font-size: 12px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.category-overlay a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+}
+
+.category-overlay a:hover {
+  color: #f2c4bd;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+  .categories-section {
+    padding: 60px 5%;
+  }
+
+  .categories-heading h2 {
+    font-size: 29px;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    height: 320px;
+  }
+}

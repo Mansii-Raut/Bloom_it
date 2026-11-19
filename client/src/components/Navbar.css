@@ -1,0 +1,217 @@
+/* ==============================
+   BLOOM IT - NAVIGATION BAR
+================================ */
+
+/* Announcement Bar */
+
+.bi-announcement {
+  background-color: #344b3f;
+  color: #fffaf5;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Main Navigation */
+
+.bi-header {
+  width: 100%;
+  min-height: 90px;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffaf5;
+  border-bottom: 1px solid #eee5df;
+  position: relative;
+  z-index: 100;
+}
+
+
+/* Logo */
+
+.bi-logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #344b3f;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.bi-logo span {
+  color: #c58b83;
+  display: inline;
+}
+
+.bi-logo small {
+  font-family: 'Poppins', sans-serif;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #987c72;
+  margin-top: 6px;
+}
+
+
+/* Navigation Links */
+
+.bi-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.bi-nav a {
+  text-decoration: none;
+  color: #403b36;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.bi-nav a:hover {
+  color: #bd827d;
+}
+
+
+/* Navigation Icons */
+
+.bi-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.bi-icons button {
+  background: none;
+  border: none;
+  color: #344b3f;
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.bi-icons button:hover {
+  color: #bd827d;
+}
+
+
+/* Mobile Menu Button */
+
+.bi-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #344b3f;
+  cursor: pointer;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1000px) {
+
+  .bi-header {
+    padding: 15px 4%;
+  }
+
+  .bi-nav {
+    gap: 14px;
+  }
+
+  .bi-nav a {
+    font-size: 11px;
+  }
+
+  .bi-icons {
+    gap: 10px;
+  }
+}
+
+
+/* Mobile Screens */
+
+@media (max-width: 768px) {
+
+  .bi-header {
+    min-height: 75px;
+    padding: 12px 5%;
+  }
+
+  .bi-logo {
+    font-size: 27px;
+  }
+
+  .bi-menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .bi-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    background-color: #fffaf5;
+    padding: 15px 6%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .bi-nav.active {
+    display: flex;
+  }
+
+  .bi-nav a {
+    width: 100%;
+    padding: 13px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #eee5df;
+  }
+
+  .bi-icons {
+    margin-left: 18px;
+    gap: 10px;
+  }
+
+  .bi-icons button {
+    font-size: 22px;
+  }
+
+  .bi-announcement {
+    font-size: 10px;
+    padding: 9px 5px;
+  }
+}
+
+
+/* Small Mobile Screens */
+
+@media (max-width: 400px) {
+
+  .bi-logo {
+    font-size: 23px;
+  }
+
+  .bi-logo small {
+    font-size: 6px;
+  }
+
+  .bi-icons {
+    gap: 5px;
+    margin-left: 10px;
+  }
+
+}
