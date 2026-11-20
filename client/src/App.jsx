@@ -14,6 +14,8 @@ import { CartProvider } from './context/CartContext';
 import Cart from './pages/Cart';
 
 import AllFlowers from './pages/AllFlowers';
+import Checkout from './pages/Checkout';
+import Contact from './pages/Contact';
 
 function Home() {
   return (
@@ -39,6 +41,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/flowers" element={<AllFlowers />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <footer id="contact">

@@ -42,11 +42,13 @@ function Navbar() {
             Flowers
           </Link>
 
-          <a href="#bouquets">Bouquets</a>
-          <a href="#gajras">Gajras & Garlands</a>
-          <a href="#occasions">Occasions</a>
-          <a href="#offers">Offers</a>
-          <a href="#contact">Contact</a>
+          <a href="/#bouquets" onClick={() => setMenuOpen(false)}>Bouquets</a>
+          <a href="/#occasions" onClick={() => setMenuOpen(false)}>Occasions</a>
+          <a href="/#offers" onClick={() => setMenuOpen(false)}>Offers</a>
+
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+            Contact
+          </Link>
         </nav>
 
         <div className="bi-icons">

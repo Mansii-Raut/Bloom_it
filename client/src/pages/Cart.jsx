@@ -106,9 +106,9 @@ function Cart() {
                 <strong>₹{grandTotal}</strong>
               </div>
 
-              <button className="checkout-btn">
+              <Link to="/checkout" className="checkout-btn">
                 Proceed to Checkout
-              </button>
+              </Link>
 
               <p>✿ Fresh Flowers | Beautiful Moments</p>
             </div>
