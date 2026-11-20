@@ -1,0 +1,143 @@
+/* Product Card */
+.product-card {
+  background: #ffffff;
+  border: 1px solid #f0e5df;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(52, 75, 63, 0.10);
+}
+
+/* Product Image */
+.product-card-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #fce9e7;
+}
+
+.product-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-card-image img {
+  transform: scale(1.05);
+}
+
+.product-card-image span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 55px;
+}
+
+/* Product Details */
+.product-card-details {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-category {
+  color: #bd7b7e;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.product-card-details h3 {
+  color: #344b3f;
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.product-card-details > p {
+  color: #806f69;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Price and Button */
+.product-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.product-price {
+  color: #344b3f;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product-add-btn {
+  background: #bd7b7e;
+  color: white;
+  border: none;
+  padding: 11px 15px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.product-add-btn:hover {
+  background: #344b3f;
+}
+
+.product-add-btn.added {
+  background: #344b3f;
+}
+
+.added-message {
+  color: #344b3f;
+  font-size: 12px;
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .product-card-image {
+    height: 220px;
+  }
+
+  .product-card-details h3 {
+    font-size: 17px;
+  }
+
+  .product-card-bottom {
+    flex-wrap: wrap;
+  }
+}

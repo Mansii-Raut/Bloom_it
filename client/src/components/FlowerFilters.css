@@ -1,0 +1,42 @@
+.flower-filters {
+  background: #ffffff;
+  padding: 25px;
+  border: 1px solid #f2e9e4;
+  height: fit-content;
+}
+
+.flower-filters h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  color: #344b3f;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f2e9e4;
+}
+
+.filter-group {
+  padding: 20px 0;
+  border-bottom: 1px solid #f2e9e4;
+}
+
+.filter-group h4 {
+  color: #344b3f;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #806f69;
+  font-size: 13px;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+.filter-group input {
+  accent-color: #bd7b7e;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}

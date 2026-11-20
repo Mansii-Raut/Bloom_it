@@ -1,0 +1,179 @@
+.all-flowers-page {
+  background: #fffaf5;
+  min-height: 100vh;
+}
+
+/* Page Banner */
+
+.flowers-banner {
+  text-align: center;
+  padding: 75px 20px;
+  background: #fce9e7;
+}
+
+.flowers-banner span {
+  color: #bd7b7e;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.flowers-banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  color: #344b3f;
+  margin: 18px 0;
+}
+
+.flowers-banner p {
+  color: #806f69;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Main Container */
+
+.flowers-container {
+  padding: 65px 8%;
+}
+
+.flowers-page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.flowers-page-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #344b3f;
+  margin-bottom: 10px;
+}
+
+.flowers-page-heading p {
+  color: #806f69;
+  font-size: 14px;
+}
+
+/* Sorting Dropdown */
+
+.flowers-sorting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.flowers-sorting label {
+  font-size: 14px;
+  color: #806f69;
+  font-weight: 500;
+}
+
+.flowers-sorting select {
+  padding: 11px 15px;
+  border: 1px solid #e8d8d3;
+  border-radius: 6px;
+  background-color: #fffaf5;
+  color: #344b3f;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+}
+
+.flowers-sorting select:focus {
+  border-color: #c77980;
+}
+
+/* Content Layout */
+
+.flowers-content {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 35px;
+  align-items: start;
+}
+
+.flowers-main {
+  min-width: 0;
+}
+
+/* Product Count */
+
+.flowers-results-count {
+  color: #806f69;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Product Grid */
+
+.flowers-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Clear Filters Button */
+
+.clear-filters-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #c77980;
+  color: #bd7779;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.clear-filters-btn:hover {
+  background: #c77980;
+  color: white;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .flowers-content {
+    grid-template-columns: 1fr;
+  }
+
+  .flowers-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .flowers-page-heading {
+    align-items: flex-start;
+  }
+
+  .flowers-sorting {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .flowers-sorting select {
+    flex: 1;
+  }
+}
+
+@media (max-width: 550px) {
+  .flowers-banner h1 {
+    font-size: 34px;
+  }
+
+  .flowers-container {
+    padding: 45px 5%;
+  }
+
+  .flowers-products {
+    grid-template-columns: 1fr;
+  } 
+}
